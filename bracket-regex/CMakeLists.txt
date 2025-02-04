@@ -4,5 +4,5 @@ project(bracket-regex)
 
 enable_testing()
 
-add_test(NAME bracket-regex COMMAND echo "bracket")
-set_property(TEST bracket-regex PROPERTY PASS_REGULAR_EXPRESSION "bracket")
+add_test(NAME bracket-regex COMMAND echo "line1")
+set_property(TEST bracket-regex PROPERTY PASS_REGULAR_EXPRESSION "line1")
