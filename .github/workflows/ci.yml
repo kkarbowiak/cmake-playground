@@ -17,10 +17,6 @@ jobs:
               name: "Windows latest",
               os: windows-latest
             }
-          - {
-              name: "Ubuntu 24.04",
-              os: ubuntu-24.04
-            }
 
     steps:
        - uses: actions/checkout@v4
