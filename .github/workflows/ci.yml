@@ -32,4 +32,4 @@ jobs:
            cd build
            cmake ..
            cmake --build .
-           ctest
+           ctest -C Debug
