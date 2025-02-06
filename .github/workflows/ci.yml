@@ -42,3 +42,12 @@ jobs:
            cmake ..
            cmake --build .
            ctest -C Debug
+
+       - name: simple-app
+         run: |
+           cd simple-app
+           mkdir build
+           cd build
+           cmake ..
+           cmake --build .
+           ctest -C Debug
