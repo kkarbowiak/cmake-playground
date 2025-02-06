@@ -25,9 +25,18 @@ jobs:
     steps:
        - uses: actions/checkout@v4
 
-       - name: Run CMake
+       - name: bracket-regex
          run: |
            cd bracket-regex
+           mkdir build
+           cd build
+           cmake ..
+           cmake --build .
+           ctest -C Debug
+
+       - name: failing-test
+         run: |
+           cd failing-test
            mkdir build
            cd build
            cmake ..
