@@ -9,3 +9,4 @@ target_compile_features(simple-app PRIVATE cxx_std_20)
 enable_testing()
 
 add_test(NAME simple-app COMMAND simple-app)
+set_property(TEST simple-app PROPERTY PASS_REGULAR_EXPRESSION "usage: app \\[-h\\] \\[--optional OPTIONAL\\] \\[-v\\] positional")
